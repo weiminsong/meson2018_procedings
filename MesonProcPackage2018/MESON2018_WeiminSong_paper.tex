@@ -12,6 +12,8 @@
 %
 \documentclass[epj]{webofc}
 \usepackage[varg]{txfonts}   % Web of Conferences font
+\usepackage{graphicx}
+\usepackage{subcaption}
 %
 % Put here some packages required or/and some personnal commands
 %
@@ -64,11 +66,50 @@ In this proceddings, four recent publications from ATLAS are discussed, they are
 \end{itemize}
 
 \section{Is X(5568) observed in the ATLAS dataset?}
-
-In 2016, with 10.4~$fb^(-1)$ proton anti-proton collision data at center of mass energy of 1.96 TeV, the D0 collaboration made a claim about
-the discovery of X(5568) in the $B^0_s \pi^\pm$ final states. 
-
 \label{5568}
+
+In 2016, with 10.4~$fb^{-1}$ proton anti-proton collision data at center of mass energy of 1.96 TeV, the D0 collaboration made a claim about
+the discovery of X(5568) in the $B^0_s \pi^\pm$ final states~\cite{D0:2016mwd}. The structure was interpreted as a tetraquark with four 
+different quark flavors: b, s, u and d. However, with similar method and same final state topology, neither CMS~\cite{Sirunyan:2017ofq}, LHCb~\cite{Aaij:2016iev} 
+at LHC nor CDF~\cite{Aaltonen:2017voc} at Tevetran find any hint of X(5568).   
+
+AT ALTAS, the analysis is based on a data sample recorded with the ATLAS detector at the LHC corresponding to 4.9 
+$fb^{-1}$ of pp collisions at 7 TeV and 19.5 $fb^{-1}$ at 8 TeV.
+No significant signal was found, as shown by Fig.~\ref{fig:5568}. Upper limits on the number of signal events, with properties corresponding to 
+those reported by D0, and on the X production rate relative to $B_{s}^{0}$ mesons, $\rho~X$, were determined at 95\% confidence level. 
+The results are N(X)<382 and $\rho~X$<0.016 for $B_{s}^{0}$ mesons with transverse momenta above 10 GeV, and N(X)<356 and $\rho~X$<0.017 for 
+transverse momenta above 15 GeV. 
+
+\begin{figure}
+    \centering
+    \begin{subfigure}[h]{0.45\textwidth}
+        \includegraphics[width=\textwidth]{plots/5568/fig_02a.png}
+    \end{subfigure}
+    \begin{subfigure}[h]{0.45\textwidth}
+        \includegraphics[width=\textwidth]{plots/5568/fig_02b.png}
+    \end{subfigure}
+    \caption{$B_{s}^{0}\pi^{\pm}$ mass distribution for candidates with $p_T$($B_{s}^{0}$)>10 GeV (left) and $p_T$($B_{s}^{0}$)>15 GeV (right). 
+     The bottom panels show the difference between each data point and the fit divided by the statistical uncertainty of that point.}
+    \label{fig:5568}
+\end{figure}
+
+The reason that the particle is observed by one experiment but not the other experiment could be physics also, rather than the mistakes
+made by experiments, as discussed by~\cite{Yang:2016sws}\cite{Ke:2018stp}. More study is needed about the X(5568) on bothe experimental and theoritical side. 
+
+
+\section{$b$-hadron pair production}
+
+The production of heavy flavour quark in proton–proton collisions provides a fruitful testing ground for the predictions of quantum chromodynamics (QCD).
+There are a few methods that could be used to identify the heavy flavour quark, which will become a jet, in experiment. 
+One popular method is based on the presence of a decay vertex orcharged-particle tracks displaced from the primary interaction vertex 
+due to the lifetime of the b-hadron, for example in~\cite{Aaboud:2016jed}. The disadvantage of this method is that when the angle
+between two heavy flavour quark is small, the performance of the tagging algorithm is poor due to the bad worse vetex fitting resolution. 
+
+ATLAS collaboration performed a new measurement of the production of two b-hadrons by tagging one b-hadron with $J\psi (\to \mu \mu)$+X and the other with $\mu$ + Y, 
+resulting in three muons in the final state. This means that the signature of the signal is: non-prompt $J\psi$ decaying to two muons, and an third muon from the same
+interaction point.
+
+ 
 
 \section{Summary}
 \label{sum}
@@ -102,6 +143,42 @@ the discovery of X(5568) in the $B^0_s \pi^\pm$ final states.
   M.~Aaboud {\it et al.} [ATLAS Collaboration],
   %``Angular analysis of $B^0_d \rightarrow K^{*}\mu^+\mu^-$ decays in $pp$ collisions at $\sqrt{s}= 8$ TeV with the ATLAS detector,''
   arXiv:1805.04000 [hep-ex].
+%\cite{D0:2016mwd}
+\bibitem{D0:2016mwd} 
+  V.~M.~Abazov {\it et al.} [D0 Collaboration],
+  %``Evidence for a $B_s^0 \pi^\pm$ state,''
+  Phys.\ Rev.\ Lett.\  {\bf 117}, no. 2, 022003 (2016)
+%\cite{Sirunyan:2017ofq}
+\bibitem{Sirunyan:2017ofq} 
+  A.~M.~Sirunyan {\it et al.} [CMS Collaboration],
+  %``Search for the X(5568) state decaying into $\mathrm{B}^{0}_{\mathrm{s}}\pi^{\pm}$ in proton-proton collisions at $\sqrt{s} = $ 8 TeV,''
+  Phys.\ Rev.\ Lett.\  {\bf 120}, no. 20, 202005 (2018)
+%\cite{Aaij:2016iev}
+\bibitem{Aaij:2016iev} 
+  R.~Aaij {\it et al.} [LHCb Collaboration],
+  %``Search for Structure in the $B_s^0\pi^\pm$ Invariant Mass Spectrum,''
+  Phys.\ Rev.\ Lett.\  {\bf 117}, no. 15, 152003 (2016)\\
+  Addendum: [Phys.\ Rev.\ Lett.\  {\bf 118}, no. 10, 109904 (2017)]
+%\cite{Aaltonen:2017voc}
+\bibitem{Aaltonen:2017voc} 
+  T.~Aaltonen {\it et al.} [CDF Collaboration],
+  %``A search for the exotic meson $X(5568)$ with the Collider Detector at Fermilab,''
+  Phys.\ Rev.\ Lett.\  {\bf 120}, no. 20, 202006 (2018)
+%\cite{Yang:2016sws}
+\bibitem{Yang:2016sws} 
+  Z.~Yang, Q.~Wang and U.~G.~Meißner,
+  %``Where does the X(5568) structure come from?,''
+  Phys.\ Lett.\ B {\bf 767}, 470 (2017)
+%\cite{Ke:2018stp}
+\bibitem{Ke:2018stp} 
+  H.~W.~Ke and X.~Q.~Li,
+  %``How can $X^{\pm}(5568)$ escape detection?,''
+  arXiv:1802.08823 [hep-ph].
+%\cite{Aaboud:2016jed}
+\bibitem{Aaboud:2016jed} 
+  M.~Aaboud {\it et al.} [ATLAS Collaboration],
+  %``Measurement of the $b\overline{b}$ dijet cross section in pp collisions at $\sqrt{s} = 7$  TeV with the ATLAS detector,''
+  Eur.\ Phys.\ J.\ C {\bf 76}, no. 12, 670 (2016)
 \end{thebibliography}
 
 \end{document}

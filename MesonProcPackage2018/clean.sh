@@ -1,1 +1,1 @@
-rm *.log *.aux *~ *.backup MESON2018_*paper.pdf
+rm *.log *.aux *.bbl *~ *.backup MESON2018_*paper.pdf

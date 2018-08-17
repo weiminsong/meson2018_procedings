@@ -4,3 +4,8 @@ I need to download all the plots from ATLAS webpage, in order to write the procc
 https://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/PAPERS/BPHY-2013-02/fig_01.png
 
 https://twiki.cern.ch/twiki/bin/view/AtlasPublic/BPhysPublicResults
+
+when copy and paste from the somewhere else directly, sometimes the latex will not compile with
+the error about: Package inputenc Error: Unicode char \u8:− not set up for use with LaTeX.
+the problem is from some special characters. I could pin them down manually.
+maybe I could try the set paste command
